@@ -14,6 +14,8 @@ class VeiculoService
         return veiculoRepository.save(veiculo);
     }
     fun findById(id: Long): Veiculo {
-        return veiculoRepository.findById(id).get();
+        return veiculoRepository.findById(id).orElseThrow{
+            java.lang.RuntimeException("Veiculo nao encontrado")
+        };
     }
 }

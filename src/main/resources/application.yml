@@ -12,10 +12,13 @@ datasources:
 
 jpa:
   default:
+    entity-scan:
+      packages: 'com.model'
+    show-sql: true
+    format-sql: true
     properties:
       hibernate:
         hbm2ddl:
           auto: update
-        show-sql: true
-        format-sql: true
-jpa.default.properties.hibernate.hbm2ddl.auto: update
+        show_sql: true
+        format_sql: true
