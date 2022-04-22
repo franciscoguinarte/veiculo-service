@@ -14,4 +14,4 @@ data class Veiculo
     val modelo: String,
     val marca: String,
     val placa: String
-)
+){}
